@@ -145,8 +145,8 @@ button:hover {
 }
 
 .activity-card .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin-top: 8px;
   margin-bottom: 0;
 }
@@ -154,6 +154,7 @@ button:hover {
 .activity-card .participant-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   padding: 6px 8px;
   margin-bottom: 6px;
@@ -162,6 +163,26 @@ button:hover {
   border-radius: 6px;
   font-size: 14px;
   color: #333;
+}
+
+.activity-card .participant-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.activity-card .participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.activity-card .participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .activity-card .participant-avatar {
